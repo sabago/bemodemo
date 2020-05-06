@@ -1,0 +1,87 @@
+title: Main
+
+columns:
+#main content
+  left:
+    width: 2/3
+    sections:
+      images:
+        type: files
+        label: Images
+      content: 
+        type: fields
+        fields:
+          bannertext:
+            type: text
+            label: Banner Text
+          heading:
+            type: text
+            label: Heading
+          overview:
+            type: textarea
+            label: Overview 
+            size: small
+          maintext:
+            type: textarea
+            label: Main Text
+            size: large
+          toggle:
+            label: No Index
+            type: toggle
+            text: Turn off SEO?
+            default: true
+          mybuilder:
+            label: Text Styler
+            type: builder
+            columns: 1 # Optional. If set to 2 or more, the builder blocks will be placed in a grid.
+            max: 10 # Optional. Limits the number of builder blocks that can be added.
+            fieldsets:
+              bodytext:
+                name: Text
+                tabs:
+                  content:
+                    label: Text Editor
+                    icon: edit # Optional. This icon appears next to the tab. The icon name can be chosen from the Kirby's icon set getkirby.com/docs/reference/ui/icon
+                    fields:
+                      editor:
+                        label: Text editor
+                        type: textarea
+                        buttons:
+                          headlines:
+                            - h1
+                            - h5
+                            - h6
+                          - bold
+                          - italic
+                          - pagelink
+                          - linethrough
+                         
+                  style:
+                    label: Style
+                    icon: cog
+                    fields:
+                      textalign:
+                        label: Text Align 
+                        type: checkboxes
+                        options: 
+                          center: center
+                      strikethrough:
+                        label: Strike Through
+                        type: checkboxes
+                        options: 
+                          linethrough: line-through
+
+  # meta information
+  right:
+    width: 1/3
+    sections:
+      meta:
+        type: fields
+        fields:
+          metatitle:
+            label: Meta Title
+            type: text
+          description:
+            label: Meta Description
+            type: text
+

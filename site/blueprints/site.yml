@@ -1,0 +1,17 @@
+title: Site
+sections:
+  facebookpixel:
+    type: fields
+    fields:
+      contactemail: 
+        type: text
+        label: Change Contact Form Email
+      facebookpixel:
+        type: textarea
+        label: Add Facebook Pixel Code
+        size: medium
+      googleanalytics:
+        type: textarea
+        label: Add Google Analytics Snippet
+        size: medium
+      

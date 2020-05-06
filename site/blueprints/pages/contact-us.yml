@@ -1,0 +1,19 @@
+title: Contact-us
+preset: page
+fields:
+  heading:
+    type: text
+    label: Heading
+  tollfree:
+    type: text
+    label: Toll Free Number
+  toggle:
+    label: No Index
+    type: toggle
+    text: Turn off SEO?
+    default: true
+  note:
+    label: Note
+    type: textarea
+    size: large
+
